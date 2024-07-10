@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'InputOutputCounter';
+  parentName: string = '';
+  parentName1: string = '';
+  sendToChild() {
+    // This method can be used to handle any additional logic if needed
+    this.parentName1=this.parentName;
+  }
+  childName: string = '';
+
+  
+  receiveFromChild(newName: string) {
+    this.childName = newName;
+  }
 }
