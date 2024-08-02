@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -18,4 +19,5 @@ export class AppComponent {
   receiveFromChild(newName: string) {
     this.childName = newName;
   }
+  title="xyz";
 }

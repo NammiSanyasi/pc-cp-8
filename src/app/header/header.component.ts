@@ -15,4 +15,5 @@ export class HeaderComponent {
   sendToParent() {
     this.nameChange.emit(this.childName);
   }
+  
 }
